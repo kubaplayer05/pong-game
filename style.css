@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	font-family: "Roboto Mono", monospace;
+    color: #fff;
+	background-color: #111;
+}
+
+canvas {
+    position: fixed;
+	top: 57%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: #fff solid 1px;
+}
+
+.title {
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.score-container {
+	position: fixed;
+	left: 50%;
+	z-index: 10;
+	transform: translateX(-50%);
+	font-size: 38px;
+	margin-top: 8px;
+    font-weight: bold;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.player-show {
+	display: flex;
+	justify-self: center;
+}
+
+.score-show {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.winner {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-family: 'Mingzat', sans-serif;
+    z-index: 10;
+}
+
+.play, .restart {
+	padding: 30px 35px;
+	background-color: rgba(237, 232, 215, 0.777);
+	border: none;
+	position: fixed;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-60%);
+	font-size: 35px;
+	border-radius: 20px;
+}
+
+.play {
+	opacity: 1;
+	z-index: 20;
+}
+
+.restart {
+	opacity: 0;
+	z-index: 15;
+}
+
+.play i {
+	color: #333;
+}
